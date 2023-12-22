@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var timerText = document.getElementById('timer-text');
 
     // Data di riferimento (23 febbraio 2022 alle 14:22)
-    var referenceDate = DateTime.fromObject({ year: 2022, month: 2, day: 23, hour: 14, minute: 22 });
+    var referenceDate = luxon.DateTime.fromObject({ year: 2022, month: 2, day: 23, hour: 14, minute: 22 });
 
     // Aggiorna il timer ogni secondo
     setInterval(function () {
         // Calcola il tempo trascorso
-        var elapsedTime = DateTime.local().diff(referenceDate, ['years', 'months', 'days', 'hours', 'minutes', 'seconds']).toObject();
+        var elapsedTime = luxon.DateTime.local().diff(referenceDate, ['years', 'months', 'days', 'hours', 'minutes', 'seconds']).toObject();
 
         // Formatta il tempo trascorso in una stringa
         var timerString = `${Math.floor(elapsedTime.years)} anni, ${Math.floor(elapsedTime.months)} mesi, ${Math.floor(elapsedTime.days)} giorni, ${Math.floor(elapsedTime.hours)} ore, ${Math.floor(elapsedTime.minutes)} minuti, ${Math.floor(elapsedTime.seconds)} secondi`;
