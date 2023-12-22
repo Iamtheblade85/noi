@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    background-color: #fff;
+}
+
+#quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#quote-text {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#dedication {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #ff4d4d;
+}
