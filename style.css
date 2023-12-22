@@ -20,6 +20,8 @@ body {
 
 .quote-container {
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 blockquote {
@@ -40,6 +42,8 @@ blockquote {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    position: relative;
+    z-index: 2;
 }
 
 /* Elementi di design */
@@ -50,7 +54,7 @@ blockquote {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://source.unsplash.com/1600x900/?flowers') repeat; /* Immagine di fiori da Unsplash */
+    background: url('https://source.unsplash.com/1600x900/?lotus-flower') repeat; /* Fiori di loto */
     opacity: 0.2; /* Opacità per sfumare l'immagine di sfondo */
     z-index: -1;
 }
@@ -58,11 +62,12 @@ blockquote {
 #container::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    background: url('https://source.unsplash.com/200x200/?leaves') no-repeat; /* Immagine di foglie da Unsplash */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/200x200/?fox-cub') no-repeat; /* Cuccioli di volpe */
     background-size: cover;
-    transform: translate(-50%, -50%);
+    opacity: 0.2; /* Opacità per sfumare l'immagine di sfondo */
+    z-index: -2;
 }
