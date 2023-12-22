@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+	const { DateTime } = luxon;
+
     // Array di citazioni d'amore
     var loveQuotes = [
         { text: "L'amore è la forza più potente dell'universo.", author: "Mahatma Gandhi" },
